@@ -8,10 +8,11 @@ class ImgSpider(scrapy.spiders.Spider):
         image = ImageItem()
         img_urls = []
         partialLink = "https://www.ncbi.nlm.nih.gov/"
-        for img in response.css(".figure img::attr(src)").extract():
+        imageURL = response.css(".figure img::attr(src)").extract()
+        for img in imageURL:
             fullImgLink = partialLink + img
+            title = response.css(".icnblk_cntnt a::text").extract()
+            caption = response.css(".caption p::text").extract()
             img_urls.append(fullImgLink)
-
-        image["image_urls"] = img_urls
-
-        return image
+            image["image_urls"] = img_urls
+        yield ImageItem(title=title, caption=caption, image_urls=[image])
