@@ -34,19 +34,30 @@
 
          <div class="row">
             <div class="content">
-               <div class="card">
-                  <div class="image">
-                     <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4419420/bin/IJRI-25-109-g001.jpg" alt="">
-                  </div>
-                  <div class="img-text">
-                     <div class="img-title">Figure 1 (A-D)
-                     </div>
-                     <div class="img-description">Common radiological appearances of lung cancer. Centrally located mass with mediastinal invasion (arrow, A), peripherally situated mass abutting the pleura (arrow, B), mass with smooth, lobulated margins (arrow, C) and with spiculated, irregular margins (arrow, D)</div>
-                  </div>
-               </div>
-
             </div>
          </div>
       </div>
    </body>
+
+   <script>
+      const container = document.querySelector('.content');
+      fetch("./crawler/ERJ/erj_data.json")
+      .then(response => {return response.json()})
+      .then(data => {
+         for (var i=0; i<data.length; i++){
+            let div = document.createElement('div');
+            div.className="card";
+            div.innerHTML=
+            `
+            <div class="image">
+               <img src="${data[i].Link}" alt="image">
+            </div>
+            <div class="img-text">
+               <div class="img-description">${data[i].Title}</div>
+            </div>
+            `
+            container.appendChild(div);
+         }
+      })
+   </script>
 </html>
