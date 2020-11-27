@@ -12,5 +12,5 @@
 - Data source: https://erj.ersjournals.com/content/19/4/722.figures-only
 - Crawler tool use: Selenium
 - Directory crawler/ERJ
-- Data source: https://erj.ersjournals.com/content/19/4/722.figures-only
+
 
