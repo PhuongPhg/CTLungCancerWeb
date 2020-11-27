@@ -16,6 +16,6 @@ for i in p_element:
     # img_urls.append(link)
     # img_titles.append(title)
     print("Link: "+link+"\n"+"Title: "+title+"\n")
-    f.writerows([title,link])
+    f.writerow([title,link])
 
 driver.quit()
