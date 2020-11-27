@@ -33,20 +33,31 @@
          </div>
 
          <div class="row">
-            <div class="content">
+            <div class="content gallery">
+               <div class="row"></div>
             </div>
          </div>
       </div>
    </body>
 
    <script>
-      const container = document.querySelector('.content');
+      const pcontainer = document.querySelector('.content');
+      const container = pcontainer.querySelector('.row');
       fetch("./crawler/ERJ/erj_data.json")
       .then(response => {return response.json()})
       .then(data => {
+         let imagesPerColumn = data.length/3;
+         var column = []
+         column[0] = document.createElement('div');
+         column[1] = document.createElement('div');
+         column[2] = document.createElement('div');
+         column[0].className = "column";
+         column[1].className = "column";
+         column[2].className = "column";
+         
          for (var i=0; i<data.length; i++){
             let div = document.createElement('div');
-            div.className="card";
+            div.className="card"; 
             div.innerHTML=
             `
             <div class="image">
@@ -56,8 +67,12 @@
                <div class="img-description">${data[i].Title}</div>
             </div>
             `
-            container.appendChild(div);
+            column[i%3].appendChild(div);
          }
+         
+         container.appendChild(column[0]);
+         container.appendChild(column[1]);
+         container.appendChild(column[2]);
       })
    </script>
 </html>
