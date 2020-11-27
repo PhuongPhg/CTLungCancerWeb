@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <title>CT Lung Cancer</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      <link href='style.css' rel='stylesheet'>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="navbar right">
+               <a href="index.html" class="active">Home</a>
+               <a href="about.html">About Us</a>
+               <a>Project</a>
+            </div>
+         </div>
+         
+         <div class="row">
+            <div class="title">About Us</div>
+         </div>
+
+         <div class="row">
+            <div class="content">
+               <!-- <div class="person">
+                  <div class="avatar"><img src="avatar-sample.jpg" alt="avatar"></div>
+                  <div class="info">
+                     <div class="name">Doan Tuyet Mai</div>
+                     <div class="description">ICT Department</div>
+                     <div class="description"><b>Email: </b>maidt.bi9162@st.usth.edu.vn</div>
+                  </div>
+               </div>
+
+               <div class="person">
+                  <div class="avatar"><img src="avatar-sample.jpg" alt="avatar"></div>
+                  <div class="info">
+                     <div class="name">Doan Tuyet Mai</div>
+                     <div class="description">ICT Department</div>
+                     <div class="description"><b>Email: </b>maidt.bi9162@st.usth.edu.vn</div>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <!-- <script  src="members.json">
+
+   </script> -->
+   <script>
+      const container = document.querySelector('.content');
+      fetch("./members.json")
+      .then(response => {
+         return response.json();
+      })
+      .then(data => {
+         for (var i=0; i<data.length; i++){
+            var div = document.createElement('div');
+            div.className = 'person';
+            div.innerHTML=
+            `
+               <div class="avatar"><img src="avatar-sample.jpg" alt="avatar"></div>
+               <div class="info">
+                  <div class="name">${data[i].name}</div>
+                  <div class="description">ICT Department</div>
+                  <div class="description"><b>Email: </b>${data[i].email}</div>
+               </div>
+            `
+            container.appendChild(div);
+         }
+      });
+      
+   </script>
+   
+</html>
