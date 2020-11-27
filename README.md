@@ -17,7 +17,7 @@
 ## Source 3:
 - Data source: https://radiopaedia.org/articles/lung-cancer-3
 - Crawler tool use: BeautifulSoup
-- Directory [Crawler/Radiopaedia]('./crawler/radiopaedia')
+- Directory [Crawler/Radiopaedia](./crawler/radiopaedia)
 
 ## csv_to_json:
 To use this, run command
