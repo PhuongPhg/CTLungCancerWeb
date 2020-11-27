@@ -68,7 +68,9 @@
             column[i%3].appendChild(div);
          }
          
-         container.appendChild(column)
+         for (var i=0;i<3;i++){
+            container.appendChild(column[i])
+         }
       })
    </script>
 </html>
