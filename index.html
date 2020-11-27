@@ -48,12 +48,10 @@
       .then(data => {
          let imagesPerColumn = data.length/3;
          var column = []
-         column[0] = document.createElement('div');
-         column[1] = document.createElement('div');
-         column[2] = document.createElement('div');
-         column[0].className = "column";
-         column[1].className = "column";
-         column[2].className = "column";
+         for (var i=0;i<3;i++){
+            column[i] = document.createElement('div');
+            column[i].className = "column";
+         }
          
          for (var i=0; i<data.length; i++){
             let div = document.createElement('div');
@@ -70,9 +68,7 @@
             column[i%3].appendChild(div);
          }
          
-         container.appendChild(column[0]);
-         container.appendChild(column[1]);
-         container.appendChild(column[2]);
+         container.appendChild(column)
       })
    </script>
 </html>
