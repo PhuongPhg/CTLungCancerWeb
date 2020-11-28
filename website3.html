@@ -47,7 +47,6 @@
       fetch("./crawler/radiopaedia/radiopaedia.json")
       .then(response => {return response.json()})
       .then(data => {
-         console.log(data);
          let imagesPerColumn = data.length/3;
          var column = []
          for (var i=0;i<3;i++){
