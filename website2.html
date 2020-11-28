@@ -44,10 +44,10 @@
    <script>
       const pcontainer = document.querySelector('.content');
       const container = pcontainer.querySelector('.row');
-      fetch("./crawler/radiopaedia/radiopaedia.json")
+      fetch("./crawler/one/one/spiders/output.json")
       .then(response => {return response.json()})
       .then(data => {
-         let imagesPerColumn = data.length/3;
+         let imagesPerColumn = data.title.length/3;
          var column = []
          for (var i=0;i<3;i++){
             column[i] = document.createElement('div');
