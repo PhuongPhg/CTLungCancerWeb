@@ -16,9 +16,11 @@ function displayImages(path){
          div.className="card"; 
          div.innerHTML=
          `
-         <div class="image">
-            <img src="${data[i].Link}" alt="image">
-         </div>
+         <a href=${data[i].Link} target="_blank">
+            <div class="image">
+               <img src=${data[i].Link} alt="image">
+            </div>
+         </a>
          <div class="img-text">
             <div class="img-description">${data[i].Title}</div>
          </div>
