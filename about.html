@@ -23,14 +23,16 @@
          <!-- </div> -->
 
          <div class="row">
-            <div class="content members">
+            <div class="content">
+               <div class="members">
+               </div>
             </div>
          </div>
       </div>
    </body>
 
    <script>
-      const container = document.querySelector('.content');
+      const container = document.querySelector('.members');
       fetch("./members.json")
       .then(response => {
          return response.json();
