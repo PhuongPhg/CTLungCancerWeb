@@ -4,7 +4,7 @@
       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-      <link href='view/style.css' rel='stylesheet'>
+      <link href='style.css' rel='stylesheet'>
    </head>
 
    <body>
@@ -12,8 +12,8 @@
          <!-- <div class="header"> -->
             <div class="row">
                <div class="navbar right">
-                  <a href="index.html" class="active">Home</a>
-                  <a href="view/about.html">About Us</a>
+                  <a href="../index.html" class="active">Home</a>
+                  <a href="about.html">About Us</a>
                   <a>Project</a>
                </div>
             </div>
@@ -25,10 +25,10 @@
 
          <div class="row">
             <div class="navbar">
-               <a href="index.html" class="active">Website 1</a>
-               <a href="view/website2.html">Website 2</a>
-               <a href="view/website3.html">Website 3</a>
-               <a href="view/website4.html">Website 4</a>
+               <a href="../index.html">Website 1</a>
+               <a href="website2.html">Website 2</a>
+               <a href="website3.html">Website 3</a>
+               <a href="website4.html" class="active">Website 4</a>
                <a>Website 5</a>
             </div>
          </div>
@@ -44,7 +44,7 @@
    <script>
       const pcontainer = document.querySelector('.content');
       const container = pcontainer.querySelector('.row');
-      fetch("./crawler/ERJ/erj_data.json")
+      fetch("../crawler/one/one/spiders/yandex.json")
       .then(response => {return response.json()})
       .then(data => {
          let imagesPerColumn = data.length/3;
