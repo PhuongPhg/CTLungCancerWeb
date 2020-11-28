@@ -95,8 +95,11 @@ body{
    font-weight: 700;
    text-transform: uppercase;
    margin-top: 10px;
-   margin-bottom: 20px;
+   margin-bottom: 7px;
    float:left;
+}
+.description{
+   font-size: 20px;
 }
 
 
