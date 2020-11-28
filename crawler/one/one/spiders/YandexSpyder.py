@@ -8,7 +8,6 @@ class YandexSpider(scrapy.spiders.Spider):
     def parse(self, response):
         titles = response.css('img::attr(alt)').extract()
         links = response.css('img::attr(src)').extract()
-        print('##########')
         for item in zip(titles, links):
             all_items = {
                 'Title' : BeautifulSoup(item[0]).text,

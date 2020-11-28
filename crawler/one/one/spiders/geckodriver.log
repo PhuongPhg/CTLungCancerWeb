@@ -1,0 +1,20 @@
+1606584767797	geckodriver	INFO	Listening on 127.0.0.1:41197
+1606584767803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelL6lh3"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606584770340	Marionette	INFO	Listening on port 34847
+1606584770515	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+1606584778042	Marionette	INFO	Stopped listening on port 34847
+1606589802249	geckodriver	INFO	Listening on 127.0.0.1:53007
+1606589803254	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6d2QJ6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606589806604	Marionette	INFO	Listening on port 38773
+1606589806722	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+JavaScript warning: https://duckduckgo.com/d2883.js, line 1: unreachable code after return statement
+1606589812024	Marionette	INFO	Stopped listening on port 38773
