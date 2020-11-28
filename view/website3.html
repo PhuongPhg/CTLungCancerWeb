@@ -1,0 +1,77 @@
+<html>
+   <head>
+      <title>CT Lung Cancer</title>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+      <link href='./style.css' rel='stylesheet'>
+   </head>
+
+   <body>
+      <div class="container">
+         <!-- <div class="header"> -->
+            <div class="row">
+               <div class="navbar right">
+                  <a href="../index.html" class="active">Home</a>
+                  <a href="about.html">About Us</a>
+                  <a>Project</a>
+               </div>
+            </div>
+            
+            <div class="row">
+               <div class="title">CT Lung Cancer Image</div>
+            </div>
+         <!-- </div> -->
+
+         <div class="row">
+            <div class="navbar">
+               <a href="../index.html">Website 1</a>
+               <a>Website 2</a>
+               <a href="website3.html" class="active">Website 3</a>
+               <a>Website 4</a>
+               <a>Website 5</a>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="content gallery">
+               <div class="row"></div>
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <script>
+      const pcontainer = document.querySelector('.content');
+      const container = pcontainer.querySelector('.row');
+      fetch("../crawler/radiopaedia/radiopaedia.json")
+      .then(response => {return response.json()})
+      .then(data => {
+         let imagesPerColumn = data.length/3;
+         var column = []
+         for (var i=0;i<3;i++){
+            column[i] = document.createElement('div');
+            column[i].className = "column";
+         }
+         
+         for (var i=0; i<data.length; i++){
+            let div = document.createElement('div');
+            div.className="card"; 
+            div.innerHTML=
+            `
+            <div class="image">
+               <img src="${data[i].Link}" alt="image">
+            </div>
+            <div class="img-text">
+               <div class="img-description">${data[i].Title}</div>
+            </div>
+            `
+            column[i%3].appendChild(div);
+         };
+         
+         for (var i=0;i<3;i++){
+            container.appendChild(column[i])
+         }
+      })
+   </script>
+</html>
