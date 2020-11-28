@@ -44,9 +44,10 @@
    <script>
       const pcontainer = document.querySelector('.content');
       const container = pcontainer.querySelector('.row');
-      fetch("./crawler/ERJ/erj_data.json")
+      fetch("./crawler/radiopaedia/radiopaedia.json")
       .then(response => {return response.json()})
       .then(data => {
+         console.log(data);
          let imagesPerColumn = data.length/3;
          var column = []
          for (var i=0;i<3;i++){
