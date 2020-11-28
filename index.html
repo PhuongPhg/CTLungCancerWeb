@@ -1,6 +1,7 @@
 <html>
    <head>
       <title>CT Lung Cancer</title>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
       <link href='style.css' rel='stylesheet'>
@@ -43,9 +44,7 @@
    <script>
       const pcontainer = document.querySelector('.content');
       const container = pcontainer.querySelector('.row');
-      fetch("./crawler/ERJ/erj_data.json")
-      .then(response => {return response.json()})
-      .then(data => {
+      $.getJSON("./crawler/ERJ/erj_data.json", function (data) {
          let imagesPerColumn = data.length/3;
          var column = []
          for (var i=0;i<3;i++){
@@ -53,7 +52,7 @@
             column[i].className = "column";
          }
          
-         for (var i=0; i<data.length; i++){
+         $.each(data, function (key, value){
             let div = document.createElement('div');
             div.className="card"; 
             div.innerHTML=
@@ -66,7 +65,7 @@
             </div>
             `
             column[i%3].appendChild(div);
-         }
+         });
          
          for (var i=0;i<3;i++){
             container.appendChild(column[i])
