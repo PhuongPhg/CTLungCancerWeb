@@ -44,7 +44,9 @@
    <script>
       const pcontainer = document.querySelector('.content');
       const container = pcontainer.querySelector('.row');
-      $.getJSON("./crawler/ERJ/erj_data.json", function (data) {
+      fetch("./crawler/ERJ/erj_data.json")
+      .then(response => {return response.json()})
+      .then(data => {
          let imagesPerColumn = data.length/3;
          var column = []
          for (var i=0;i<3;i++){
@@ -52,7 +54,7 @@
             column[i].className = "column";
          }
          
-         $.each(data, function (key, value){
+         for (var i=0; i<data.length; i++){
             let div = document.createElement('div');
             div.className="card"; 
             div.innerHTML=
@@ -65,7 +67,7 @@
             </div>
             `
             column[i%3].appendChild(div);
-         });
+         };
          
          for (var i=0;i<3;i++){
             container.appendChild(column[i])
