@@ -23,7 +23,7 @@
          <!-- </div> -->
 
          <div class="row">
-            <div class="content">
+            <div class="content members">
             </div>
          </div>
       </div>
@@ -31,7 +31,7 @@
 
    <script>
       const container = document.querySelector('.content');
-      fetch("./data/members.json")
+      fetch("./members.json")
       .then(response => {
          return response.json();
       })
@@ -41,7 +41,7 @@
             div.className = 'person';
             div.innerHTML=
             `
-               <div class="avatar"><img src="data/avatar-sample.jpg" alt="avatar"></div>
+               <div class="avatar"><img src=${data[i].avatar} alt="avatar"></div>
                <div class="info">
                   <div class="name">${data[i].name}</div>
                   <div class="description">ICT Department</div>
