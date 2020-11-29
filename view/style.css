@@ -7,7 +7,6 @@ body{
    /* background-color: red; */
    background-image: url('https://www.fg-a.com/wallpapers/white-marble-2-2018.jpg');
    background-attachment: scroll;
-   background-repeat: no-repeat;
    background-position: bottom -40px center;
    object-fit: cover;
 }
