@@ -25,6 +25,10 @@
 - Crawler tool use: Selenium
 - Directory crawler/duckduckdo
 
+## Source 7:
+- Data source: https://emedicine.medscape.com/article/358433-overview
+- Crawler tool: BeautifulSoup (bs4)
+Directory [Crawler/emedicine](./crawler/emedicine)
 ## csv_to_json:
 To use this, run command
 ```
