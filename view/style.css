@@ -49,8 +49,8 @@ body{
 /* TITLE OF THE WEBSITE */
 .title{
    color: #555555;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 2.5em;
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 3.5em;
    text-align: center;
    text-transform: uppercase;
    text-shadow: 0px 4px 4px rgba(39, 39, 39, 0.25);
@@ -168,7 +168,7 @@ body{
    -ms-flex-wrap: wrap; /* IE10 */
    flex-wrap: wrap;
  }
- 
+
  /* Create four equal columns that sits next to each other */
  .gallery .column {
    -ms-flex: 25%; /* IE10 */
@@ -178,14 +178,14 @@ body{
    margin-right: 30px;
    margin-left: 30px;
  }
- 
+
  .gallery .column img {
    margin-bottom: 10px;
    margin-top: 8px;
    vertical-align: middle;
    width: 100%;
  }
- 
+
  /* Responsive layout - makes a two column-layout instead of four columns */
  @media screen and (max-width: 800px) {
    .column {
@@ -194,7 +194,7 @@ body{
      max-width: 33%;
    }
  }
- 
+
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 600px) {
    .column {
