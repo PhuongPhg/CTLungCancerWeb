@@ -2,7 +2,7 @@ import requests
 import json
 import csv
 
-url = "https://openi.nlm.nih.gov/api/search?it=xg&m=1&n=60&query=lung"
+url = "https://openi.nlm.nih.gov/api/search?it=c&m=1&n=60&query=lung%20cancer"
 
 payload={}
 headers = {
