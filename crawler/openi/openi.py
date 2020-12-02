@@ -2,7 +2,7 @@ import requests
 import json
 import csv
 
-url = "https://openi.nlm.nih.gov/api/search?it=c&m=1&n=500&query=lung%20cancer"
+url = "https://openi.nlm.nih.gov/api/search?it=c&m=1&n=100&query=lung%20cancer"
 
 payload={}
 headers = {
@@ -21,7 +21,8 @@ for i in range(len(b['list'])):
   img_src.append('https://openi.nlm.nih.gov/'+b['list'][i]['imgLarge'])
   # img_script.append(b['list'][i]['image'])
   c=b['list'][i]['image']
-  img_script.append(' '.join(c['caption'].split()[:9])+'...')
+  # img_script.append(' '.join(c['caption'].split()[:9])+'...')
+  img_script.append(c['caption'])
 # print(img_script)
 
 f = csv.writer(open('openi.csv','w',newline='',encoding='utf-8'))
