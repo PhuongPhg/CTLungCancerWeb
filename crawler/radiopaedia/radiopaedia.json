@@ -1,9 +1,5 @@
 [
     {
-        "Title": "Case 1",
-        "Link": "https://prod-images-static.radiopaedia.org/images/24266527/bcb3b224c9f598ae52385cf906b5ff_thumb.jpeg"
-    },
-    {
         "Title": "Case 2: squamous cell carcinoma",
         "Link": "https://prod-images-static.radiopaedia.org/images/270187/0f227b6f72d14b90c37c325177c965_thumb.jpg"
     },
@@ -16,44 +12,20 @@
         "Link": "https://prod-images-static.radiopaedia.org/images/21555830/31e9953990df718ce702d25cb18a19_thumb.jpeg"
     },
     {
-        "Title": "Case 5",
-        "Link": "https://prod-images-static.radiopaedia.org/images/344667/a1132897bb46f12930a5b9a4d8943f_thumb.jpg"
-    },
-    {
         "Title": "Case 6: with SVC obstruction",
         "Link": "https://prod-images-static.radiopaedia.org/images/25356/c5571faacc498394036ab6413b89bd_thumb.jpeg"
-    },
-    {
-        "Title": "Case 7: hilar cancer",
-        "Link": "https://prod-images-static.radiopaedia.org/images/27422175/219ad938e9c990af7df415ffa154b9_thumb.jpeg"
     },
     {
         "Title": "Case 8: with RUL collapase",
         "Link": "https://prod-images-static.radiopaedia.org/images/7068562/23de80c54f337800658e905969229d_thumb.jpg"
     },
     {
-        "Title": "Case 9",
-        "Link": "https://prod-images-static.radiopaedia.org/images/172052/cb38ae5f91be2e045684bcd5528326_thumb.jpg"
-    },
-    {
-        "Title": "Case 10",
-        "Link": "https://prod-images-static.radiopaedia.org/images/175241/9aa9ac57c144b3bcab7d6d41057e79_thumb.jpg"
-    },
-    {
         "Title": "Case 11: CT",
         "Link": "https://prod-images-static.radiopaedia.org/images/391704/aefdf40114812abda4e2b3714cdde3_thumb.jpg"
     },
     {
-        "Title": "Case 12: undifferentiated large cell carcinoma",
-        "Link": "https://prod-images-static.radiopaedia.org/images/449601/6fde394454fd65481a54db0701d53e_thumb.jpg"
-    },
-    {
         "Title": "Case 13: with associated pulmonary embolism ",
         "Link": "https://prod-images-static.radiopaedia.org/images/378292/e0172350ddfc8b56da993f70f1a970_thumb.jpg"
-    },
-    {
-        "Title": "Case 14",
-        "Link": "https://prod-images-static.radiopaedia.org/images/537020/1be1e5e7258315884acc068a8fc232_thumb.jpg"
     },
     {
         "Title": "Case 15: squamous cell carcinoma",
@@ -62,22 +34,6 @@
     {
         "Title": "Case 16: CT",
         "Link": "https://prod-images-static.radiopaedia.org/images/1402486/65b4e4ec35995d4ca1527bed542476_thumb.jpg"
-    },
-    {
-        "Title": "Case 17",
-        "Link": "https://prod-images-static.radiopaedia.org/images/1642938/b05ff6dbf1a648801ba86fdd5f4efb_thumb.jpg"
-    },
-    {
-        "Title": "Case 18",
-        "Link": "https://prod-images-static.radiopaedia.org/images/1669525/e12fd473015b741236b0c6f9ce8686_thumb.jpg"
-    },
-    {
-        "Title": "Case 19",
-        "Link": "https://prod-images-static.radiopaedia.org/images/1671639/839daba82efd1756ac2332e792a38b_thumb.jpg"
-    },
-    {
-        "Title": "Case 20",
-        "Link": "https://prod-images-static.radiopaedia.org/images/1983800/4790c437df97f781ddc678dd10dc51_thumb.jpg"
     },
     {
         "Title": "Case 21",
@@ -92,10 +48,6 @@
         "Link": "https://prod-images-static.radiopaedia.org/images/6786363/15cf2b61ce67ca7203ee36be917a85_thumb.jpg"
     },
     {
-        "Title": "Case 25: causing phrenic nerve palsy",
-        "Link": "https://prod-images-static.radiopaedia.org/images/51984818/867a236efe5b56bc53e4ac4c79782c_thumb.jpeg"
-    },
-    {
         "Title": "Case 26: bronchoscopic lung biopsy",
         "Link": "https://prod-images-static.radiopaedia.org/images/52814187/cf1565802f577c5b25dd7c949b4f32_thumb.jpeg"
     },
@@ -108,16 +60,8 @@
         "Link": "https://prod-images-static.radiopaedia.org/images/3085283/07f86b9772793319833f53d168d097_thumb.jpg"
     },
     {
-        "Title": "Pulmonary metastases",
-        "Link": "https://prod-images-static.radiopaedia.org/images/28823/0316ba5d7e9c1680b0e8327e5f788e_thumb.jpg"
-    },
-    {
         "Title": "Pulmonary tuberculosis",
         "Link": "https://prod-images-static.radiopaedia.org/images/131423/fdd852f70a9dfb199387a480f54d7c_thumb.jpg"
-    },
-    {
-        "Title": "Pulmonary arteriovenous malformation",
-        "Link": "https://prod-images-static.radiopaedia.org/images/31137/8d5495f6623360ff913cb07b2e68bb_thumb.jpg"
     },
     {
         "Title": "Pulmonary hamartoma",
