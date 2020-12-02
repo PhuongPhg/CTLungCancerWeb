@@ -1,23 +1,30 @@
 [
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f1.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f1.jpg",
+    "Title": "Example of a nodule ? 3 mm (arrowhead)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f2.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f2.jpg",
+    "Title": "Example of a nodule < 3 mm (arrow)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f3.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f3.jpg",
+    "Title": "Example of non-nodules ? 3 mm (apical scars indicated by arrows)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5a.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5a.jpg",
+    "Title": "(a) the contouring of a nodule > 3mm (the same nodule that was shown in Figure 1)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5b.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5b.jpg",
+    "Title": "the marking of an approximate centroid for a nodule < 3mm (the same nodule < 3mm that was shown in Figure 2)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5c.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f5c.jpg",
+    "Title": "the marking of non-nodules >= 3mm (the same non-nodule apical scars that were shown in Figure 3)"
   },
   {
-    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f6a.jpg"
+    "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2176079/bin/nihms35475f6a.jpg",
+    "Title": "(a) This figure shows one of the annotation tools used to implement the LIDC unblinded read review process"
   }
 ]
