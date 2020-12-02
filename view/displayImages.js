@@ -1,10 +1,8 @@
 function displayImages(path){
-   const pcontainer = document.querySelector('.content');
-   const container = pcontainer.querySelector('.row');
+   const container = document.querySelector('.gallery');
    fetch(path)
    .then(response => {return response.json()})
    .then(data => {
-      let imagesPerColumn = data.length/3;
       var column = []
       for (var i=0;i<3;i++){
          column[i] = document.createElement('div');
@@ -25,6 +23,8 @@ function displayImages(path){
             <div class="img-description">${data[i].Title}</div>
          </div>
          `
+         min_length = (column[0].length,column[1].length,column[2].length)
+
          column[i%3].appendChild(div);
       };
       
