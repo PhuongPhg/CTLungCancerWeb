@@ -58,40 +58,7 @@
 
             // Set display
             $('.column').remove();
-            switch(this.innerHTML){
-               case "ERJ":{
-                  displayImages("./crawler/ERJ/erj_data.json");
-                  break;
-               }
-               case "NCBI":{
-                  displayImages("./crawler/multiplesources/one/spiders/ncbi.json");
-                  break;
-               }
-               case "Radiopaedia":{
-                  displayImages("./crawler/radiopaedia/radiopaedia.json");
-                  break;
-               }
-               case "Yandex":{
-                  displayImages("./crawler/multiplesources/one/spiders/yandex.json");
-                  break;
-               }
-               case "Duckduckgo":{
-                  displayImages("./crawler/duckduckgo/duckduckgo.json");
-                  break;
-               }
-               case "Wikimedia":{
-                  displayImages("./crawler/multiplesources/one/spiders/wikimedia.json");
-                  break;
-               }
-               case "PMC":{
-                  displayImages("./crawler/PMC/test2.json");
-                  break;
-               }
-               case "OpenI":{
-                  displayImages("./crawler/openi/openiV2.json");
-                  break;
-               }
-            }
+            displayImages('https://chalalala.github.io/CT-Image-Sources/' + this.innerHTML.toLowerCase() + '.json')
          })
       }
    </script>
