@@ -11,8 +11,8 @@ function displayImages(path){
       
       for (var i=0; i<data.length; i++){
          let div = document.createElement('div');
-         div.className="card"; 
-         div.innerHTML=
+         div.className = "card"; 
+         div.innerHTML =
          `
          <a href=${data[i].Link} target="_blank">
             <div class="image">
@@ -23,8 +23,6 @@ function displayImages(path){
             <div class="img-description">${data[i].Title}</div>
          </div>
          `
-         min_length = (column[0].length,column[1].length,column[2].length)
-
          column[i%3].appendChild(div);
       };
       
